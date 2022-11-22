@@ -11,6 +11,6 @@ console.log("Seu primeiro número é maior que o segundo?", number1 > number2)
 // O primeiro numero é igual ao segundo? false
 console.log("Seu primeiro número é igual ao segundo?", number1 == number2)
 // O primeiro numero é divisível pelo segundo? true
-console.log("Seu primeiro número é divisivel pelo segundo?", number1 % number2, `\n (se ele for 0 é sim, se 1, não)`)
+console.log("Seu primeiro número é divisivel pelo segundo?", number1 % number2 === 0)
 // O segundo numero é divisível pelo primeiro? true
-console.log("Seu secundo número é divisivel pelo primeiro?", number2 % number1, `\n (se ele for 0 é sim, se 1, não)`)
+console.log("Seu secundo número é divisivel pelo primeiro?", number2 % number1 === 0)

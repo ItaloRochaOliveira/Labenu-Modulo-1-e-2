@@ -4,17 +4,17 @@
 // Escreva as operações lógicas abaixo em formato de código. Imprima no console se o valor da operação é verdadeira ou falsa:
 
 // a) 5 é maior que 20 e também é menor que 2;
-let a = 5 > 20 && 5 < 2
+let a = 5 > 20 && 5 < 2 //false
 console.log(a)
 // b) 5 é igual a 5 ou é igual a “5”;
-let b = 5 == 5 || 5 == "5"
+let b = 5 == 5 || 5 == "5" //true
 console.log(b)
 // c) negação de (vinte é maior que cinquenta)
-let c = !(20 > 50)
+let c = !(20 > 50)//true
 console.log(c)
 
 // d) negação de (vinte é maior que cinquenta OU cinquenta é maior que sessenta)
-let d = !(20 > 50 || 50 > 60)
+let d = !(20 > 50 || 50 > 60) //true
 
 // Exemplo:
 
@@ -111,7 +111,7 @@ let inssDeJaneiro = (salario + 5784)*10/100
 console.log("O desconto de Janeiro é de:", inssDeJaneiro)
 
 // 4) Imprima no console o cálculo do salário de todos os meses com acréscimos e descontos.
-let salarioTotal = porcentagemPorComissao + salarioFixoMaisCreche + inss
+let salarioTotal = porcentagemPorComissao + salarioFixoMaisCreche - inss
 console.log("O seu salario total é de:", salarioTotal)
 
 // 5) A média do salário em  seis meses (de janeiro a junho), levando em consideração as comissões e auxílio. 
