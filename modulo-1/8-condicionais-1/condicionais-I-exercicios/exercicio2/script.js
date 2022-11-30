@@ -12,23 +12,28 @@
 function verficador(num, booleanoEM, booleanoFacul) {
   if (num >= 18) {
     alert(`Você é maior de idade`);
+    if (booleanoEM) {
+      alert(`Você Terminou o Ensino Médio`);
+    } else {
+      alert(`Você não Terminou o Ensino Médio`);
+    }
+    if (!booleanoFacul) {
+      alert(`Você não está cursando uma faculdade`);
+    } else {
+      alert(`Você está cursando uma faculdade`);
+    }
   } else {
     alert(`Você é menor de idade`);
-  }
-  if (booleanoEM) {
-    alert(`Você Terminou o Ensino Médio`);
-  } else {
-    alert(`Você não Terminou o Ensino Médio`);
-  }
-  if (booleanoFacul) {
-    alert(`Você está cursando uma faculdade`);
-  } else {
-    alert(`Você não está cursando uma faculdade`);
+    if (booleanoEM) {
+      alert(`Você Terminou o Ensino Médio`);
+    } else {
+      alert(`Você não Terminou o Ensino Médio`);
+    }
   }
 }
 
 verficador(
   prompt("Qual a sua idade"),
   confirm("Você terminou o Ensino Médio?"),
-  confirm("Você está cursando uma faculdade?")
+  confirm("Você não está cursando uma faculdade?")
 );

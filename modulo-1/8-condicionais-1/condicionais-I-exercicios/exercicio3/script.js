@@ -11,16 +11,26 @@
 
 // Crie uma estrutura de `if/else if/else` que verifique se a nacionalidade guardada na const `nacionalidade` é igual a cada uma das nacionalidades acima, e caso seja, imprima a nacionalidade no console. O último `else` deve imprimir "nacionalidade não encontrada" caso o valor de `nacionalidade` não corresponda a nenhum dos valores.
 
+const nacionalidades = [
+  "brasileira",
+  "argentina",
+  "uruguaia",
+  "chilena",
+  "colombiana",
+];
+
 function verficadorDeNacionalidade(nacionalidade) {
-  if (nacionalidade == "brasileira") {
+  if (nacionalidade == nacionalidades[0]) {
     alert(`Você é ${nacionalidade}`);
-  } else if (nacionalidade == "argentina") {
+  } else if (nacionalidade == nacionalidades[1]) {
     alert(`Você é ${nacionalidade}`);
-  } else if (nacionalidade == "uruguaia") {
+  } else if (nacionalidade == nacionalidades[2]) {
     alert(`Você é ${nacionalidade}`);
-  } else if (nacionalidade == "chilena") {
+  } else if (nacionalidade == nacionalidades[3]) {
     alert(`Você é ${nacionalidade}`);
-  } else if (nacionalidade == "colombiana") {
+  } else if (nacionalidade == nacionalidades[4]) {
+    alert(`Você é ${nacionalidade}`);
+  } else if (nacionalidade == nacionalidades[nacionalidades.length - 1]) {
     alert(`Você é ${nacionalidade}`);
   } else {
     alert(`Adicionando nova nacionalidade...`);
@@ -29,8 +39,17 @@ function verficadorDeNacionalidade(nacionalidade) {
 }
 
 function novaNacionalidade(nacionalidade) {
-  alert(`${nacionalidade} adicionada ^^`);
-  alert(`Você é ${nacionalidade}`);
+  nacionalidades.push(nacionalidade);
+  verficadorDeNacionalidade(
+    prompt(`Qual a sua nacionalidade dentre essas opções?
+  -brasileira
+  -argentina
+  -uruguaia
+  -chilena
+  -colombiana
+  -${nacionalidade}
+  -(outros) para adicionar nova nacionalidade`).toLowerCase()
+  );
 }
 
 verficadorDeNacionalidade(
