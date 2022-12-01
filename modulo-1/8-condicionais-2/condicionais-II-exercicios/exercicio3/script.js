@@ -4,7 +4,9 @@
 
 //código a ser reescrito
 
-const nome = prompt("Escreva José para da um olá zé ou olá e o nome");
+const nome = prompt("Escreva José para da um olá zé ou olá e o nome")
+  .toLowerCase()
+  .trim();
 //nome if
 if (nome === "José") {
   console.log("Oi, Zé!");

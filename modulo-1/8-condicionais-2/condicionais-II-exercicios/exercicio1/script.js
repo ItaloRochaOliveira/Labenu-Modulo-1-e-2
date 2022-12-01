@@ -4,14 +4,17 @@
 
 const number = Number(
   prompt("Digite um número para saber se é divisivel por 2 ou 3")
-);
+).trim();
 
 // 1. Utilizando ifs aninhados
 if (number % 2 === 0) {
-  console.log("Ele é divisivel apenas por 2");
   if (number % 3 === 0) {
     console.log("Ele é divisivel por 2 e 3");
+  } else {
+    console.log("Ele é divisivel apenas por 2");
   }
+} else if (number % 3 === 0) {
+  console.log("Ele é divisivel apenas por 3");
 } else {
   console.log("Ele não é divisivel por nenhum dos dois");
 }
