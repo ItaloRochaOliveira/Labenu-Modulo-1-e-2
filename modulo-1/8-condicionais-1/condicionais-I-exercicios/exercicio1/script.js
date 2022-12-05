@@ -9,4 +9,5 @@ function verificador(num) {
     alert(`${num} é impar!`);
   }
 }
+
 verificador(prompt("Insira seu número para verficar se é par: "));
