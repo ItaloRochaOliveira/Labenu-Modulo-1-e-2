@@ -8,3 +8,5 @@ console.log(`Ranking dos maiores países do mundo:`);
 for (let i = 0; i < maioresPaises.length; i++) {
   console.log(maioresPaises[i]);
 }
+
+maioresPaises.forEach((nacionalidades) => console.log(nacionalidades));
