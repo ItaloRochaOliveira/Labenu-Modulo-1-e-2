@@ -1,6 +1,6 @@
 const numero = [Number(prompt("Insira o número para saber sua tabuada"))];
 
-//Com for normal
+//primeiro
 // let multiplicado = [];
 
 // for (let i = 0; i <= 10; i++) {
@@ -11,7 +11,26 @@ const numero = [Number(prompt("Insira o número para saber sua tabuada"))];
 //   console.log(`${i}x${10}=${multiplicado[i]}`);
 // }
 
-numero.push(10, 10, 10, 10, 10, 10, 10, 10, 10, 10);
+//segundo
+numero.push(
+  numero[0],
+  numero[0],
+  numero[0],
+  numero[0],
+  numero[0],
+  numero[0],
+  numero[0],
+  numero[0],
+  numero[0],
+  numero[0]
+);
 for (let j in numero) {
   console.log(`${j}x${numero[j]}=${j * numero[j]}`);
 }
+
+//terceiro
+// let deZeroaDez = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for (let i in deZeroaDez) {
+//   console.log(`${i}x${numero}=${i * numero}`);
+// }
