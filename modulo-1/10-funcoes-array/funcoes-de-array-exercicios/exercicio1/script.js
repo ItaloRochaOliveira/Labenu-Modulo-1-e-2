@@ -12,13 +12,11 @@ const objeto = {
 // 1. A primeira deve retornar o objeto, alterando as propriedades dele para que os **valores** deste objeto fiquem em CAIXA ALTA.
 // saída esperada:
 const funcao1 = (obj) => {
-  return {
-    ...obj,
-    nome: obj.nome.toUpperCase(),
-    profissao: obj.profissao.toUpperCase(),
-    username: obj.username.toUpperCase(),
-    senha: obj.senha.toUpperCase(),
-  };
+  let objNovo;
+  for (let i in obj) {
+    obj[i] = obj[i].toUpperCase();
+  }
+  return obj;
 };
 const maiusculo = funcao1(objeto);
 
