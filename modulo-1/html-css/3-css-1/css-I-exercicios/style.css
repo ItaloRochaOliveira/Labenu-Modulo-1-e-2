@@ -7,12 +7,12 @@
 
 main {
   font-family: helvetica;
-  width: 80vw;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .bloco {
   width: 18vw;
+  min-width: 300px;
   height: 10vh;
   margin: auto;
   margin-top: 15px;
