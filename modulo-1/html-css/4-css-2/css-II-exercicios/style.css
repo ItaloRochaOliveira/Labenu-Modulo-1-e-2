@@ -1,0 +1,43 @@
+header {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+main {
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+section {
+  width: 600px;
+}
+
+aside {
+  position: absolute;
+  width: 180px;
+  padding: 2px;
+  border: 1px solid black;
+  right: 0;
+  top: 0;
+
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-family: serif;
+}
+button:active {
+  background-color: white;
+  color: black;
+}
