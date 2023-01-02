@@ -6,6 +6,7 @@
 main {
   width: 70%;
   margin: auto;
+  justify-content: center;
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
