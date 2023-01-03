@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Prática de HTML II</title>
+  </head>
+
+  <body>
+    <!-- Substitua as tags <div> dos arquivos, para que eles contenham tags semânticas corretas no lugar das divs.
+
+        Adicione a cada uma das tags <article> a tag de mídia que o texto do elemento pede. Os arquivos de mídia estão na pasta media
+        3. Na página contato.html, crie um formulário que contenha três inputs e um botão.
+        
+        O primeiro input deve guardar um nome;
+        O segundo input deve guardar um telefone;
+        O terceiro input deve guardar uma notícia;
+        Obs: Todos os inputs devem ser do tipo texto.
+        
+        4. Na página index.html, transforme o texto “Envie sua notícia pra gente clicando aqui” em um link para a página contato.html;
+        
+        5. Transforme o texto do header da página contato.html em um link para a página inde -->
+    <header class="um">
+      <h1>Header</h1>
+    </header>
+    <main class="dois">
+      Main
+      <br />
+      <section class="tres">
+        Section
+        <article class="quatro">
+          <p>Article com imagem</p>
+          <img src="./media/pato.jpg" alt="pato" />
+          <img src="./media/pato.jpg" alt="pato" />
+          <img src="./media/pato.jpg" alt="pato" />
+        </article>
+
+        <article class="quatro">
+          <p>Article com áudio</p>
+          <audio src="./media/pato.mp3" autoplay loop></audio>
+        </article>
+
+        <article class="quatro">
+          <p>Article com vídeo</p>
+          <video src="./media/pato.mp4" autoplay loop></video>
+          <video src="./media/pato.mp4" autoplay loop></video>
+          <video src="./media/pato.mp4" autoplay loop></video>
+        </article>
+      </section>
+
+      <aside class="cinco">
+        Aside
+        <article class="quatro">Article com texto p no aside</article>
+
+        <article class="quatro">Article com texto p no aside</article>
+        <article class="quatro">Article com texto p no aside</article>
+      </aside>
+    </main>
+    <footer class="seis">
+      <p>Footer</p>
+      <p>
+        <a href="contato.html">Envie sua notícia pra gente clicando aqui</a>
+      </p>
+    </footer>
+  </body>
+</html>

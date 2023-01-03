@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  border: 0.5px solid black;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 8vh;
+  width: 100vw;
+  position: relative;
+}
+
+main {
+  height: 90vh;
+}
+main > div {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 1vw;
+  left: 0;
+}

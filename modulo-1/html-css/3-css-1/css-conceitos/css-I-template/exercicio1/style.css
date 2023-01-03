@@ -1,0 +1,31 @@
+#titulo-importante {
+  width: 100%;
+  text-align: center;
+  background: blue;
+  color: white;
+}
+
+body {
+  background: grey;
+}
+main {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.sub-titulo {
+  background: yellow;
+}
+section {
+  background: green;
+}
+.titulo-secao {
+  color: white;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: white;
+}

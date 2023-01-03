@@ -1,0 +1,12 @@
+div {
+  width: 100vw;
+  text-align: center;
+}
+button:hover {
+  background: red;
+  color: white;
+}
+button:active {
+  background: pink;
+  color: red;
+}
