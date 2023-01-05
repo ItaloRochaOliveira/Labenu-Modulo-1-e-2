@@ -18,14 +18,23 @@ const pokemon2 = {
 pokemon1.ataques = [];
 
 // c-) crie um objeto de `ataque` com a estrutura abaixo e o adicione no array `ataques` utilizando `**push()**`
-pokemon1.ataques.push({
+// pokemon1.ataques.push({
+//   nome: "Investida",
+//   dano: 40,
+//   tipo: "Normal",
+//   precisao: 100,
+// });
+//- indicado -
+ataque1 = {
   nome: "Investida",
   dano: 40,
   tipo: "Normal",
   precisao: 100,
-});
+};
+pokemon1.ataques.push(ataque1);
 
 // c) Na cópia do objeto original, adicione a propriedade **`ataques`** a partir do **espalhamento** da propriedade de mesmo nome criada para o objeto original;
+//- ou - pokemon2.ataques = [...pokemon1.ataques]
 pokemon2.ataques = [];
 pokemon2.ataques.push(...pokemon1.ataques);
 
