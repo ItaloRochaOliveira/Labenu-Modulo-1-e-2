@@ -1,14 +1,14 @@
 const mensagem = document.getElementById("mensagem");
 
-const checaCaps = (e) => {
-  console.log(e);
+const checaCaps = (banana) => {
+  console.log(banana);
   /*
   ou
   if(event.shifyKey){
     ...
   }
   */
-  if (e.key === "Shift") {
+  if (banana.key === "Shift") {
     mensagem.innerHTML = "ATENÇÃO: SEGURANDO SHIFT";
   }
 };
