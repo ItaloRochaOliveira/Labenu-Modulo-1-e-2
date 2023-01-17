@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.header,
+.footer {
+  background-color: orange;
+}
+.header {
+  height: 10vh;
+}
+
+.garagem {
+  height: 70vh;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+}
+.inside-footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
