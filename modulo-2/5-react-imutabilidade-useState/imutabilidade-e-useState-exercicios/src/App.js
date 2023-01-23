@@ -17,7 +17,7 @@ function App() {
   const [pokemon, setPokemon] = useState({
     name: "Pichu",
     type: "Electric",
-    evolved: false,
+    evolved: true,
     weight: 2,
     color: 'yellow',
     image: 'https://archives.bulbagarden.net/media/upload/thumb/f/f3/0172Pichu.png/600px-0172Pichu.png',
@@ -29,7 +29,7 @@ function App() {
     type: "Electric",
     evolved: true,
     weight: 6,
-    color: "red",
+    color: "yellow",
     image: "https://archives.bulbagarden.net/media/upload/thumb/4/4a/0025Pikachu.png/250px-0025Pikachu.png",
     id: 25
   })
@@ -61,6 +61,8 @@ function App() {
       image={pokemon.image}
       id={pokemon.id}
       setPokemon = {setPokemon}
+      evolutionPokemon = {pikachu}
+      
       /> 
       
       <PokemonCard 

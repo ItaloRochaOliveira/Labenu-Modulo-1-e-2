@@ -14,7 +14,6 @@ const PokemonCard = ({
   setPokemon,
   evolutionPokemon
 }) => {
-
 const evoluirPokemon = () => {
     if(evolved){
       setPokemon(evolutionPokemon)
@@ -22,6 +21,9 @@ const evoluirPokemon = () => {
       alert("This pokemon dont have evolution")
     }
 }
+
+
+console.log("aaaa", evolutionPokemon)
     
   return (
     <Card color={color}>
