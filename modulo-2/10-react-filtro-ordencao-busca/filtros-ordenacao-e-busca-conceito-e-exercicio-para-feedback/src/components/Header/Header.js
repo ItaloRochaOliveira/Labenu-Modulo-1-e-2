@@ -7,6 +7,12 @@ const Header = ({
 
   buscaNome,
   setBuscaNome,
+
+  ordenar,
+  setOrdenar,
+
+  ordenarPorType,
+  setOrdenarPorType,
 }) => {
   const pokemontypesArray = [
     "Normal",
@@ -43,13 +49,13 @@ const Header = ({
       value={buscaNome}
       onChange={(e) => setBuscaNome(e.target.value)}
       />
-      <select>
-        <option value="">Ordenar</option>
-        <option value="">Crescente</option>
-        <option value="">Decrescente</option>
+      <select value={ordenar} onChange={(e)=> setOrdenar(e.target.value)}>
+        <option value="Ordenar">Ordenar</option>
+        <option value="Crescente">Crescente</option>
+        <option value="Decrescente">Decrescente</option>
       </select>
-      <select name="tipo" id="tipo">
-        <option value="">Selecione um tipo</option>
+      <select name="tipo" id="tipo" value={ordenarPorType} onChange={(e) => {setOrdenarPorType(e.target.value)}}>
+        <option>Selecione um tipo</option>
         {pokemontypesArray.map((type) => {
           return (
             <option key={type} value={type}>
