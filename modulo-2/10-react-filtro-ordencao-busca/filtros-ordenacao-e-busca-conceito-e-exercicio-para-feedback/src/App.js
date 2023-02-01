@@ -21,6 +21,8 @@ const CardsContainer = styled.div`
 function App() {
   const [buscaId, setBuscaId] = useState("")
   const [buscaNome, setBuscaNome] = useState("")
+  const [ordernar, setOrdenar] = useState("")
+  const [ordenarPorType, setOrdenarPorType] = useState("")
 
   return (
     <>
@@ -28,6 +30,8 @@ function App() {
       <Header 
       buscaId={buscaId} setBuscaId={setBuscaId}
       buscaNome={buscaNome} setBuscaNome={setBuscaNome}
+      ordernar={ordernar} setOrdenar={setOrdenar}
+      ordenarPorType={ordenarPorType} setOrdenarPorType={setOrdenarPorType}
       />
       <CardsContainer>
         {pokemons
@@ -40,10 +44,37 @@ function App() {
           }
         })
         .filter((pokemon) => {
-          console.log(pokemon.name.english)
           if(buscaNome && pokemon.name.english.toLowerCase().includes(buscaNome.toLowerCase())){
             return pokemon
           } else if(!buscaNome){
+            return pokemon
+          }
+        })
+        .sort((a, b) => {
+          const pokemonAtual = a.name.english
+          const pokemonProximo = b.name.english
+          if(ordernar === "Crescente"){
+            return pokemonAtual > pokemonProximo ? 1 : -1
+          } else if (ordernar === "Decrescente"){
+            return pokemonAtual < pokemonProximo ? 1 : -1
+          } else {
+            return a.id - b.id
+          }
+        })
+        // .filter((pokemon) => {
+        //   return ordenarPorType === pokemon.type.map((type) => {
+        //     console.log(type)
+        //     if(ordenarPorType && type === ordenarPorType){
+        //       return type
+        //     } else if(!ordenarPorType){
+        //       return type
+        //     }
+        //   })
+        // })
+        .filter((pokemon) => {
+          if(pokemon.type.includes(ordenarPorType)){
+            return pokemon
+          } else if(!ordenarPorType || ordenarPorType === "Selecione um tipo"){
             return pokemon
           }
         })
